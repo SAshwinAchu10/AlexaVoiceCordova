@@ -22,7 +22,7 @@ const upload = multer({ dest: 'uploads/' });
 const app = express();
 const port = 9745;
 
-const server = https.createServer(options, app).listen(port, () => {
+const server = https.createServer(options, app).listen(process.env.PORT || 5000, '0.0.0.0', () => {
   console.log(`Express server listening on port ${port}`);
 });
 
