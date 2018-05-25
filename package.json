@@ -1,16 +1,18 @@
 {
-  "name": "example",
+  "name": "10decoders",
   "version": "1.0.0",
-  "description": "Run in root of this repo:",
+  "description": "A Node Based Webhook that fetches the trains list",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "watch": "./node_modules/watchify/bin/cmd.js ./index.js -o ./index.bundle.js -v -d -t [ babelify ]",
-    "build": "./node_modules/browseify/bin/cmd.js ./index.js -o ./index.bundle.js -v -d -t [ babelify ]"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Miguel Mota <hello@miguelmota.com> (http://www.miguelmota.com/)",
-  "license": "MIT",
+  "keywords": [
+    "webhook",
+    "nodejs"
+  ],
+  "author": "Yogesh",
+  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.0",
     "cors": "^2.7.1",
